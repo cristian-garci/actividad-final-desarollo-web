@@ -1,0 +1,30 @@
+
+body {
+    background-image: url("./imajenes/xm5.jpg"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+
+    font-family: monospace;
+}
+
+.f1 {
+
+    width: 100%;
+    
+}
+
+h1 {
+    width: 100%;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+ 
+}

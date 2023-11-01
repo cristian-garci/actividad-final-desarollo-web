@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href=".\style\style.servicios.css">
+	<title>servicios</title>
+</head>
+
+<body>
+	 <style>
+    body {
+      font-size: 130%;
+    }
+  </style>
+ <h1>Santa Bárbara </h1>
+  <ul>
+    <li><b>Personalización de productos:</b> En Santa Bárbara , ofrecemos personalización de productos deportivos, incluyendo camisetas, sudaderas y más, para que reflejen tu estilo personal.</li>
+    <li><b>Venta de productos:</b> Descubre nuestra amplia gama de productos deportivos de alta calidad, incluyendo ropa deportiva,  accesorios, todo lo que necesitas para mantener un estilo de vida activo.</li>
+    <li><b>Cotizaciones personalizadas:</b> Si necesitas comprar en cantidad para un equipo deportivo, evento especial o proyecto, ofrecemos cotizaciones personalizadas con soluciones a medida y precios competitivos.</li>
+  </ul>
+<h2>seleccione el producto que desea con sus caracteristicas</h2>
+    <select id="productos">
+        <option value="0">Selecciona un producto</option>
+        <option value="sudadera">Sudadera - $25000</option>
+        <option value="pantaloneta">Pantaloneta - $15000</option>
+        <option value="blusa">Blusa - $20000</option>
+        <option value="chores">Chores - $30000</option>
+        <option value="chanclas">Chanclas - $10000</option>
+        <option value="camiseta">Camiseta - $18000</option>
+        <option value="leggins">Leggings - $22000</option>
+        <option value="gorras">Gorras - $12000</option>
+        <option value="gafas">Gafas - $8000</option>
+    </select>
+
+    <p>El precio del producto seleccionado es: <span id="precio">$0</span></p>
+
+    <script>
+        
+        var select = document.getElementById("productos");
+        var precioElemento = document.getElementById("precio");
+
+        
+        select.addEventListener("change", function () {
+            
+            var valorSeleccionado = select.value;
+
+            
+            var precios = {
+                "sudadera": 25000,
+                "pantaloneta": 15000,
+                "blusa": 20000,
+                "chores": 30000,
+                "chanclas": 10000,
+                "camiseta": 18000,
+                "leggins": 22,
+                "gorras": 12,
+                "gafas": 8
+            };
+
+            
+            precioElemento.textContent = "$" + precios[valorSeleccionado];
+        });
+    </script>
+    
+  </select>
+  
+  <select>
+  	<option value="rojo">rojo</option>
+    <option value="azul">azul</option>
+    <option value="negro">negro</option>
+    <option value="amarillo">amarinillo</option>
+    <option value="verde">verde</option>
+    <option value="gris">gris</option>
+    <option value="blanco">blanco</option>
+    <option value="marron">marron</option>
+    <option value="rosa">gafas</option>
+  </select>
+
+  <select>
+  	<option value="M">M</option>
+    <option value="S">S</option>
+    <option value="XL">XL</option>
+    <option value="L">L</option>
+    <option value="XXL">XXL</option>
+  
+  </select>
+
+   <style>
+        .contact-info {
+            display: none;
+        }
+    </style>
+    <script>
+        function showContactInfo() {
+            var contactInfo = document.querySelector('.contact-info');
+            if (contactInfo.style.display === 'none') {
+                contactInfo.style.display = 'block';
+            } else {
+                contactInfo.style.display = 'none';
+            }
+        }
+    </script>
+
+
+    <button onclick="showContactInfo()">para tu cotizacion personalizada comunicarce con nosotros por alguna de estas lineas</button>
+    <div class="contact-info">
+        
+        <p>WhatsApp +57 323564938</p>
+        <p>correo: atencioncliente@gmail.com</p>
+        
+        
+    </div>
+
+
+</body>
+</html>

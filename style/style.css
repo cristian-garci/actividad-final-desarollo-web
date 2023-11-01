@@ -1,0 +1,65 @@
+
+h1 {
+    text-align: center;
+    color: #88D7B7;
+
+}
+h2 {
+    text-align: center;
+
+    margin-top: +40px;
+    color: white;
+}
+h4{
+    font-size: 20px;
+    color: white;
+}
+
+h3 {
+    font-size: 20px;
+    color: white;
+
+}
+h5{
+    font-size: 20px;
+    color: white;
+}
+h6{
+    font-size: 20px ;
+    color:white ;
+    left: 200px;
+}
+
+body {
+    background-image: url("./imajenes/fondo stb.webp"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+
+.father-body{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+}
+
+  .ropad2
+  {position: relative;
+ width: 100%
+  }
+
+  .img{
+    height: 233px;
+ 
+  }
+
+  .img2{
+    width: 100%;
+  }
+
+  .contact-info
+  {
+    color: white;
+  }

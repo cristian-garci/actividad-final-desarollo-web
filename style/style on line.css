@@ -1,0 +1,11 @@
+body {
+    background-image: url("./imajenes/fondopag2.jpg"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+
+}
+
+.con{
+    color: white;
+}
